@@ -23,3 +23,7 @@ variable "private_subnets" {
 variable "database_subnets" {
     default = ["10.0.21.0/24", "10.0.22.0/24"]  
 }
+
+variable "is_peering_required" {
+  default = true
+}
