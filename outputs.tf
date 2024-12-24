@@ -10,3 +10,15 @@
 #     value = module.vpc.default_vpc_route_table
   
 # }
+
+output "public_subnets_id" {
+  value = module.vpc.private_subnets_id
+}
+
+output "private_subnets_id" {
+  value = module.vpc.private_subnets_id
+}
+
+output "database_subnets_id" {
+  value = module.vpc.database_subnets_id
+}
